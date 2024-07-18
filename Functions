@@ -189,7 +189,7 @@ sleep(1);}}
 function Cetak1($label, $msg = "[No Content]"){
 $n = "\n";$k = "\033[1;33m";$p = "\033[1;37m";
 			
-	$len = 9;
+	$len = 5;
 	$lenstr = $len-strlen($label);
 	print $k."[".$p.$label.$k.str_repeat(" ",$lenstr)."]".$p.$msg;
 }
