@@ -170,7 +170,7 @@ $p = "\033[1;37m";
 
 function Line(){
 $n = "\n";$c = "\033[1;36m";
-	return $c.str_repeat('─',50).$n;
+	return $c.str_repeat('─',55).$n;
 }
 function clean($extensi){
 	return str_replace(".php","",$extensi);
