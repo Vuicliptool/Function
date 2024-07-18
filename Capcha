@@ -92,7 +92,7 @@ Class RequestApi{
 		$sym = [' ─ ',' / ',' │ ',' \ ',];
 		$a = 0;
 		for($i=$tmr*4;$i>0;$i--){
-			print $xwr[$a % 4]." Bypass $cap $xr%".$sym[$a % 4]." \r";
+			print $xwr[$a % 4]." Bypass $cap $xr% \r";
 			usleep(100000);
 			if($xr < 99)$xr+=1;
 			$a++;
