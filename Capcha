@@ -145,7 +145,8 @@ Class RequestApi{
 			print $m."[".$p."!".$m."] Bypass $cap failed";
 			sleep(2);
 			print "\r                              \r";
-			print Error($cap." @".provider_api." Error\n");
+			print Error($cap." @".provider_api." Error\r");sleep(2);
+				print "\r                              \r";
 			return 0;
 		}
 	}
