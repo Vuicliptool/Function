@@ -109,7 +109,7 @@ Class RequestApi{
 		if($method == "teaserfast")return "Teaserfast";
 	}
 	function getResult($data ,$method, $header = 0){
-		$n = "\n";$m = "\033[1;31m";$k = "\033[1;33m";$h = "\033[1;32m";$p = "\033[1;37m";$b = "\033[1;34m";
+		$n = "\r";$m = "\033[1;31m";$k = "\033[1;33m";$h = "\033[1;32m";$p = "\033[1;37m";$b = "\033[1;34m";
 		$cap = $this->filter(explode('&',explode("method=",$data)[1])[0]);
 		$get_in = $this->in_api($data ,$method, $header);
 		if(!$get_in["status"]){
